@@ -1,5 +1,3 @@
-// (_this select 0) execVM 'cScripts\Ammo\c_VehiclesCargo.sqf'; <- place this in the expression box of a Veichle Respawn Moduel
-
 if (! isServer) exitWith {};
 
     params ["_vehicle","_quaScale"];
@@ -221,8 +219,6 @@ if (! isServer) exitWith {};
             _vehicle addItemCargoGlobal [QUOTE(_MED_FIELDDRESSING),(_quaScale * 6)];
             
             _vehicle addItemCargoGlobal [QUOTE(_ITEM_TOOLKIT),(_quaScale * 1)];
-            
-            _vehicle setVariable ["TF_RadioType", "tf_rt1523g", true]; //Temp bugfix for missing radio
         };
         case (_vehicleType in _vehicleCargoTRUCK): {
             _vehicle addMagazineCargoGlobal [QUOTE(_MAG_PRIMARY),(_quaScale * 15)];
@@ -238,8 +234,6 @@ if (! isServer) exitWith {};
             _vehicle addItemCargoGlobal [QUOTE(_MED_FIELDDRESSING),(_quaScale * 6)];
             
             _vehicle addItemCargoGlobal [QUOTE(_ITEM_TOOLKIT),(_quaScale * 1)];
-            
-            _vehicle setVariable ["TF_RadioType", "tf_rt1523g", true]; //Temp bugfix for missing radio
         };
         case (_vehicleType in _vehicleCargoARMOR) : {
             _vehicle addMagazineCargoGlobal [QUOTE(_MAG_AR1),(_quaScale * 2)];
@@ -267,8 +261,6 @@ if (! isServer) exitWith {};
             _vehicle addItemCargoGlobal [QUOTE(_MED_FIELDDRESSING),(_quaScale * 6)];
             
             _vehicle addItemCargoGlobal [QUOTE(_ITEM_TOOLKIT),(_quaScale * 1)];
-            
-            _vehicle setVariable ["TF_RadioType", "tf_rt1523g", true]; //Temp bugfix for missing radio
         };
         case (_vehicleType in _vehicleCargoMED) : {
             _vehicle addItemCargoGlobal [QUOTE(_ITEM_EARPLUGS),(_quaScale * 15)];
@@ -297,8 +289,6 @@ if (! isServer) exitWith {};
             _vehicle addMagazineCargoGlobal [QUOTE(_CHEMLIGHT_RED),(_quaScale * 10)];
             
             _vehicle addItemCargoGlobal [QUOTE(_ITEM_TOOLKIT),(_quaScale * 1)];
-            
-            _vehicle setVariable ["TF_RadioType", "tf_rt1523g", true]; //Temp bugfix for missing radio
         };
         case (_vehicleType in _vehicleCargoTransportAviation) : {
             _vehicle addMagazineCargoGlobal [QUOTE(_MAG_PRIMARY),(_quaScale * 15)];

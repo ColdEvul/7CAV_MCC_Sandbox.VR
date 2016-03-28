@@ -277,6 +277,7 @@ mccPresetsObjects = [
 					,['======= 7Cav Scripts =======','']
                     ,['ReGear', '_this addAction ["<t color=""#ffcc33"">ReGear</t>","[] call A3G_Loadout_fnc_ApplyLoadout;"];']
                     ,['ReGear (With Ammo)', '_this addAction ["<t color=""#ffcc33"">ReGear</t>","[] call A3G_Loadout_fnc_ApplyLoadout;"]; [_this,1] call CAV_fnc_BaseCrate;']
+                    ,['ReGear (With Ammo & Arsenal)', '_this addAction ["<t color=""#ffcc33"">ReGear</t>","[] call A3G_Loadout_fnc_ApplyLoadout;"]; ["AmmoboxInit",[_this,true]] call BIS_fnc_arsenal; [_this,1] call CAV_fnc_BaseCrate;']
                     ,['Supply Crate', '[_this,1] call c_SupplyCrate;']
 					];
 

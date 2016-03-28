@@ -1,3 +1,5 @@
+// To regear add this to a item init line: _this addAction ["<t color=""#ffcc33"">ReGear</t>","[] call A3G_Loadout_fnc_ApplyLoadout;"];
+
 class CfgLoadouts {
     #include "defines.h"
     

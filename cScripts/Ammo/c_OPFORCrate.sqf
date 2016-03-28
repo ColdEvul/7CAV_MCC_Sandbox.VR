@@ -1,12 +1,9 @@
-//null =[this] execVM "cScripts\Ammo\OPFORCrate.sqf"; <- place this into the init box of the ammo crate
-
 if (! isServer) exitWith {};
 
 _crate = _this select 0;
 
 while {alive _crate} do
 
-{
 clearweaponcargoGlobal _crate;
 clearmagazinecargoGlobal _crate;
 clearitemcargoGlobal _crate;
@@ -63,6 +60,3 @@ _crate addItemCargoGlobal ["ACE_morphine",250];
 _crate addBackpackCargoGlobal ["rhs_rpg",10];
 _crate addBackpackCargoGlobal ["rhs_assault_umbts_demo",10];
 _crate addBackpackCargoGlobal ["rhs_sidor",10];
-
-sleep 1800;
-};

@@ -1,5 +1,3 @@
-//null =[this] execVM "cScripts\Ammo\c_BaseCrate.sqf"; <- place this into the init box of the ammo crate
-
 if (! isServer) exitWith {};
 
 #include "..\Loadouts\defines.h";
@@ -94,7 +92,7 @@ _crate addItemCargoGlobal [QUOTE(_MED_PACKINGBANDAGE),(_quaScale * 250)];
 _crate addItemCargoGlobal [QUOTE(_MED_ELASTICBANDAGE),(_quaScale * 250)];
 _crate addItemCargoGlobal [QUOTE(_MED_QUIKCLOT),(_quaScale * 250)];
 _crate addItemCargoGlobal [QUOTE(_MED_TOURNIQUET),(_quaScale * 250)];
-//    _crate addItemCargoGlobal [QUOTE(_MED_PERSONALAIDKIT),(_quaScale * 250)];
+//_crate addItemCargoGlobal [QUOTE(_MED_PERSONALAIDKIT),(_quaScale * 250)];
 _crate addItemCargoGlobal [QUOTE(_MED_BLOOD1),(_quaScale * 250)];
 _crate addItemCargoGlobal [QUOTE(_MED_BLOOD500),(_quaScale * 250)];
 _crate addItemCargoGlobal [QUOTE(_MED_SAL1),(_quaScale * 250)];
