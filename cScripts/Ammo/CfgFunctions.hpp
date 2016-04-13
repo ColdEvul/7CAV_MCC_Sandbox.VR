@@ -22,6 +22,5 @@ class CAV {
             tag = "CAV";
             file = "cScripts\Ammo\c_VehiclesCargo.sqf";
         };
-
     };
 };
